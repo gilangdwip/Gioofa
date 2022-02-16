@@ -51,27 +51,27 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/template" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Produk</p>
+                  <p>Template</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/categories" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Categories</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/order" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Customers</p>
+                  <p>Order</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                <a href="/collection" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
+                  <p>Collection</p>
                 </a>
               </li>
               <li class="nav-item">
