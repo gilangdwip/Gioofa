@@ -34,7 +34,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/allProducts">All Items</a></li>
             <li  class="active"><a href="/contact">Contact</a></li>
-            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="/admin">Dashboard</a></li>
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
@@ -52,7 +52,7 @@
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">"Gioofa".</a>
+      <a class="navbar-brand" href="/">"Gioofa".</a>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
