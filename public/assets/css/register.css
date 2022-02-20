@@ -50,8 +50,17 @@ input[type=password-confirm]{
 }
 
 .btn:hover {
-    
     background-color: black !important;
     color: white !important;
+}
+
+.form-check {
+    margin-left: 70px !important;
+}
+
+.btn-link {
+    display: block;
+    margin-left: 200px;
+    margin-top: 20px;
 }
 
