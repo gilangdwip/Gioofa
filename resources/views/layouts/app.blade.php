@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', '"Gioofa".') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -18,13 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-    </style>
     <link rel="stylesheet" href="{{asset('assets/css/register.css')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="">
+    {{-- <img class="bg" src="/assets/img/bg-01.jpg" alt=""> --}}
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-transparent">
             <div class="container">

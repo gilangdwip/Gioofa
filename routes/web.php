@@ -34,10 +34,6 @@ Route::get('/admin', function () {
     return view('home');
 });
 
-Route::get('/register', function () {
-    return view('depan.admin.register');
-});
-
 Route::get('/template',[templateController::class, 'index']);
 Route::post('/template/create',[templateController::class, 'create']);
 Route::get('template/{id}/edit',[templateController::class, 'edit']);
