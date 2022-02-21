@@ -129,7 +129,7 @@
                 <h3>Template Name</h3>
                 <span>Company Profile</span>
               </div>
-              <img class="img-fluid" src="assets/img/img_1.jpg">
+              <img class="img-fluid" src="assets/img/img1.jpg">
             </a>
           </div>
 
@@ -139,7 +139,7 @@
                 <h3>Template Name</h3>
                 <span>Portofolio</span>
               </div>
-              <img class="img-fluid" src="assets/img/img_2.jpg">
+              <img class="img-fluid" src="assets/img/img2.jpg">
             </a>
           </div>
           <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
@@ -148,7 +148,7 @@
                 <h3>Template Name</h3>
                 <span>Curriculum Vitae</span>
               </div>
-              <img class="img-fluid" src="assets/img/img_3.jpg">
+              <img class="img-fluid" src="assets/img/img3.jpg">
             </a>
           </div>
 
@@ -158,7 +158,7 @@
                 <h3>Template Name</h3>
                 <span>Blog</span>
               </div>
-              <img class="img-fluid" src="assets/img/img_4.jpg">
+              <img class="img-fluid" src="assets/img/img4.jpg">
             </a>
           </div>
 
@@ -168,7 +168,7 @@
                 <h3>Template Name</h3>
                 <span>Blog</span>
               </div>
-              <img class="img-fluid" src="assets/img/img_5.jpg">
+              <img class="img-fluid" src="assets/img/img5.jpg">
             </a>
           </div>
 
@@ -178,7 +178,7 @@
                 <h3>Template Name</h3>
                 <span>Company Profile</span>
               </div>
-              <img class="img-fluid" src="assets/img/img_6.jpg">
+              <img class="img-fluid" src="assets/img/img6.jpg">
             </a>
           </div>
         </div>
