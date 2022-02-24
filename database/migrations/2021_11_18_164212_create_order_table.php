@@ -15,12 +15,10 @@ class CreateOrderTable extends Migration
     {
         Schema::create('order', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('template_id');
-            $table->unsignedBigInteger('user_id');
+            $table->string('template_id');
+            $table->string('user_id');
+            $table->integer('status');
             $table->timestamps();
-
-            $table->foreign('template_id')->references('id')->on('template')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
         });
     }

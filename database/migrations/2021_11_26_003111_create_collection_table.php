@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAssetsTable extends Migration
+class CreateCollectionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,12 @@ class CreateAssetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('assets', function (Blueprint $table) {
+        Schema::create('collection', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('template_id');
-            $table->string('gambar');
+            $table->integer('template_id');
+            $table->integer('user_id');
             $table->timestamps();
-
-            $table->foreign('template_id')->references('id')->on('template')->onDelete('cascade');
         });
-
-
     }
 
     /**
@@ -32,6 +28,6 @@ class CreateAssetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('assets');
+        Schema::dropIfExists('collection');
     }
 }

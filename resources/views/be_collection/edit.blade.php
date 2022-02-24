@@ -12,11 +12,15 @@
                             <h3 class="panel-title">Inputs</h3>
                         </div>
                         <div class="panel-body">
-                            <form action="/categories/{{$categories->id}}/update" method="POST">
+                            <form action="/collection/{{$collection->id}}/update" method="POST">
                                 {{csrf_field()}}
                                 <div class="form-group">
-                                    <label for="category">Category ID</label>
-                                    <input name="category" type="text" class="form-control" id="category" aria-describedby="category" value="{{$categories->category}}">
+                                    <label for="template_id">ID Template</label>
+                                    <input name="template_id" type="text" class="form-control" id="template_id" aria-describedby="template_id" value="{{$collection->template_id}}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_id">ID User</label>
+                                    <input name="user_id" type="text" class="form-control" id="user_id" aria-describedby="user_id" value="{{$collection->template_id}}">
                                 </div>
 
 

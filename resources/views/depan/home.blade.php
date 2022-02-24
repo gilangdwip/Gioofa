@@ -107,11 +107,10 @@
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-9 text-center text-lg-end" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">All</a>
-              <a href="#" data-filter=".web">Company Profofile</a>
-              <a href="#" data-filter=".design">Portofolio</a>
-              <a href="#" data-filter=".branding">Curriculum Vitae</a>
-              <a href="#" data-filter=".photography">Blog</a>
+                <a href="#" data-filter="*" class="active">All</a>
+                @foreach ($categories as $categories )
+                <a href="#" data-filter="{{$categories -> category}}">{{$categories -> category}}</a>
+                @endforeach
             </div>
           </div>
         </div>
@@ -133,7 +132,7 @@
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item Blog col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="/preview" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Template Name</h3>

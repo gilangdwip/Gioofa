@@ -20,9 +20,7 @@ class templateController extends Controller
 
     public function create(Request $request)
     {
-        $input = $request->all();
-        $input['image'] = request()->file('image')->store('template');
-        \App\models\template::create( $input);
+        \App\models\template::create($request->all());
         return redirect('/template')->with('sukses','Data Berhasil diBuat');
     }
 
@@ -34,10 +32,8 @@ class templateController extends Controller
 
     public function update(Request $request,$id)
     {
-        $input = $request->all();
-        $input['image'] = request()->file('image')->store('template');
         $template=\App\models\template::find($id);
-        $template->update($input);
+        $template->update($request->all());
         return redirect('/template')->with('sukses','Data Berhasil diUpdate');
     }
 

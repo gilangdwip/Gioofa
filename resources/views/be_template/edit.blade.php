@@ -6,7 +6,7 @@
 
 
 <body>
-    <div class="main">
+<div class="main">
     <div class="main-content">
         <div class="container-fluid">
             <div class="row">
@@ -16,11 +16,11 @@
                             <h3 class="panel-title">Inputs</h3>
                         </div>
                         <div class="panel-body">
-                            <form action="/template/{{$template->id}}/update" method="POST" enctype="multipart/form-data">
+                            <form action="/template/{{$template->id}}/update" method="POST">
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label for="categories_id">Category ID</label>
-                                    <input name="categories_id" type="text" class="form-control" id="categories_id" aria-describedby="categories_id" value="{{$template->category_id}}">
+                                    <input name="categories_id" type="text" class="form-control" id="categories_id" aria-describedby="categories_id" value="{{$template->categories_id}}">
 
                                 </div>
                                 <div class="form-group">
@@ -36,10 +36,8 @@
                                     <input name="harga" type="text" class="form-control" id="harga" aria-describedby="harga" value="{{$template->harga}}">
                                 </div>
                                 <div class="form-group">
-                                <img src="{{'http://127.0.0.1:8000/storage/' . $template->image}}" alt="" style="width: 300px">
-                                <br>
-                                <label for="image">Image</label>
-                                <input name="image" type="file" class="form-control" id="image" aria-describedby="image" >
+                                    <label for="image">Path Image</label>
+                                    <input name="image" type="text" class="form-control" id="image" aria-describedby="image" value="{{$template->image}}">
                                 </div>
 
 

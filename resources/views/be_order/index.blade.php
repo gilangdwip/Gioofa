@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('content')
+@section("content")
 
 <div class="main">
     <div class="main-content">
@@ -14,10 +14,10 @@
                         <div class="panel-heading">
                             <div class="right">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Tambah Templae
+                                    Tambah order
                                   </button>
                             </div>
-                            <h3 class="panel-title">Template</h3>
+                            <h3 class="panel-title">order</h3>
                         </div>
 
 
@@ -25,29 +25,23 @@
                                 <table id="intro_table"class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th  scope="col">Categories id</th>
-                                            <th  scope="col">Nama</th>
-                                            <th  scope="col">Deskripsi</th>
-                                            <th  scope="col">Harga</th>
-                                            <th  scope="col">Image</th>
+                                            <th  scope="col">ID Template</th>
+                                            <th  scope="col">ID User</th>
 
                                             <th>AKSI</th>
                                             {{-- <th  scope="col"> Aksi <th> --}}
                                         </tr>
                                     </thead>
                                     <tbody>
-                                @foreach($template as $template)
+                                @foreach($order as $order)
 
                                         <tr>
-                                            <td> {{$template->categories_id}}</td>
-                                            <td> {{$template->nama}}</td>
-                                            <td> {{$template->deskripsi}}</td>
-                                            <td> {{$template->harga}}</td>
-                                            <td> {{$template->image}}</td>
+                                            <td> {{$order->template_id}}</td>
+                                            <td> {{$order->user_id}}</td>
 
                                             <td>
-                                                <a href="/template/{{$template->id}}/edit" class = "btn btn-warning btn-sm">Edit</a>
-                                                <a href="/template/{{$template->id}}/delete" class= "btn btn-danger btn-sm" onclick="return confirm('konfirm untuk hapus data')">Hapus</a>
+                                                <a href="/order/{{$order->id}}/edit" class = "btn btn-warning btn-sm">Edit</a>
+                                                <a href="/order/{{$order->id}}/delete" class= "btn btn-danger btn-sm" onclick="return confirm('konfirm untuk hapus data')">Hapus</a>
                                             </td>
                                         </tr>
 
@@ -72,29 +66,17 @@
             <div class="modal-body">
 
 
-                <form action="/template/create" method="POST">
+                <form action="/order/create" method="POST">
                     {{csrf_field()}}
                     <div class="form-group">
-                        <label for="categories_id">categories_id</label>
-                        <input name="categories_id" type="text" class="form-control" id="categories_id" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input name="nama" type="text" class="form-control" id="nama">
-                    </div>
-                    <div class="form-group">
-                        <label for="deskripsi">Deskripsi</label>
-                        <input name="deskripsi" type="text" class="form-control" id="deskripsi" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="harga">Harga</label>
-                        <input name="harga" type="text" class="form-control" id="harga" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                      <label for="image">Path Image</label>
-                      <input name="image" type="text" class="form-control" id="image" aria-describedby="emailHelp">
+                        <label for="template_id">ID Template</label>
+                        <input name="template_id" type="text" class="form-control" id="template_id" aria-describedby="emailHelp">
                     </div>
 
+                    <div class="form-group">
+                        <label for="user_id">ID user</label>
+                        <input name="user_id" type="text" class="form-control" id="user_id" aria-describedby="emailHelp">
+                    </div>
 
                     <button type="submit" class="btn btn-primary">Kirim data</button>
                     </form>

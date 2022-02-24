@@ -8,35 +8,35 @@ class orderController extends Controller
 {
     public function index()
     {
-        $template = \App\models\template::all();
-        return view('be_template/index',['template'=> $template]);
+        $order = \App\models\order::all();
+        return view('be_order/index',['order'=> $order]);
 
     }
 
     public function create(Request $request)
     {
-        \App\models\template::create($request->all());
-        return redirect('/template')->with('sukses','Data Berhasil diBuat');
+        \App\models\order::create($request->all());
+        return redirect('/order')->with('sukses','Data Berhasil diBuat');
     }
 
     public function edit($id)
     {
-        $template=\App\models\template::find($id);
-        return view('be_template/edit', ['template'=>$template]);
+        $order=\App\models\order::find($id);
+        return view('be_order/edit', ['order'=>$order]);
     }
 
     public function update(Request $request,$id)
     {
-        $template=\App\models\template::find($id);
-        $template->update($request->all());
-        return redirect('/template')->with('sukses','Data Berhasil diUpdate');
+        $order=\App\models\order::find($id);
+        $order->update($request->all());
+        return redirect('/order')->with('sukses','Data Berhasil diUpdate');
     }
 
     public function delete($id)
     {
-        $template=\App\models\template::find($id);
-        $template->delete($template);
-        return redirect('/template')->with('sukses','Data Berhasil diHapus');
+        $order=\App\models\order::find($id);
+        $order->delete($order);
+        return redirect('/order')->with('sukses','Data Berhasil diHapus');
     }
 
 }

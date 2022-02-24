@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Asset extends Model
+class collection extends Model
 {
-    use HasFactory;
+    protected $table ='collection';
+    protected $fillable =['template_id','user_id'];
 }

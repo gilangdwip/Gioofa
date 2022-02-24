@@ -15,14 +15,12 @@ class CreateTemplateTable extends Migration
     {
         Schema::create('template', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id');
+            $table->string('categories_id');
             $table->string('nama');
             $table->string('deskripsi');
             $table->string('harga');
             $table->string('image')->nullable();
             $table->timestamps();
-
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
