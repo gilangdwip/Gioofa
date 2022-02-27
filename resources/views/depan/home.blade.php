@@ -76,21 +76,21 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="assets/img/banner_img_01.jpg" class="d-block w-100" alt="...">
+            <img src="asset/img/banner_img_01.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="assets/img/banner_img_02.jpg" class="d-block w-100" alt="...">
+            <img src="asset/img/banner_img_02.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/banner_img_03.jpg" class="d-block w-100" alt="...">
+            <img src="asset/img/banner_img_03.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -114,8 +114,11 @@
             </div>
           </div>
         </div>
+
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+            @foreach ($template as $template )
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4 position-relative">
+
               <div class="d-flex gap-1  rating position-absolute">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-download px-1" viewBox="0 0 16 16">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
@@ -123,16 +126,21 @@
                   </svg>
                   <p>10</p>
               </div>
-            <a href="/preview" class="item-wrap fancybox">
+
+
+            <a href="/preview/template/{{$template->id}}" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Template Name</h3>
+                <h3>{{$template->nama}}</h3>
                 <span>Company Profile</span>
               </div>
-              <img class="img-fluid" src="assets/img/img1.jpg">
+              <img class="img-fluid" src="{{'storage/' . $template->image}}">
             </a>
-          </div>
 
-          <div class="item Blog col-sm-6 col-md-4 col-lg-4 mb-4">
+          </div>
+          @endforeach
+
+
+          {{-- <div class="item Blog col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="/preview" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Template Name</h3>
@@ -179,10 +187,11 @@
               </div>
               <img class="img-fluid" src="assets/img/img6.jpg">
             </a>
-          </div>
+          </div> --}}
         </div>
 
-        <p class="text-center" data-aos="fade-up" data-aos-delay="100"><a href="/allProducts" class="readmore" >View All</a></p>
+
+        <p class="text-center" data-aos="fade-up" data-aos-delay="100"><a href="/all-product" class="readmore" >View All</a></p>
       </div>
 
     </section><!-- End  Works Section -->

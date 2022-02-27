@@ -10,17 +10,19 @@
       <div class="site-section pb-0">
         <div class="container">
           <div class="row align-items-stretch">
+
             <div class="col-md-8" data-aos="fade-up">
-              <img src="assets/img/bg-01.jpg" alt="Image" class="img-fluid">
+              <img src="{{asset ('storage/' . $template->image)}}" alt="" class="img-fluid">
             </div>
+
+
             <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <div class="sticky-content">
-                <h3 class="h3">Nama Template</h3>
-                <p class="mb-4"><span class="text-muted">$ Harga</span></p>
+                <h3 class="h3">{{$template->nama}}</h3>
+                <p class="mb-4"><span class="text-muted">{{$template->harga}}</span></p>
 
                 <div class="mb-5">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illo, id recusandae molestias
-                    illum unde pariatur, enim tempora.</p>
+                  <p>{{$template->deskripsi}}</p>
 
                 </div>
 
@@ -43,6 +45,8 @@
                 <p><a href="#" class="readmore">Check Out</a></p>
               </div>
             </div>
+
+
           </div>
         </div>
     </section>

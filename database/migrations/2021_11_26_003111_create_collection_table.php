@@ -15,9 +15,12 @@ class CreateCollectionTable extends Migration
     {
         Schema::create('collection', function (Blueprint $table) {
             $table->id();
-            $table->integer('template_id');
-            $table->integer('user_id');
+            $table->unsignedBigInteger('template_id');
+            $table->unsignedBigInteger('users_id');
             $table->timestamps();
+
+            $table->foreign('template_id')->references('id')->on('template')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

@@ -5,6 +5,7 @@ use App\Http\Controllers\templateController;
 use App\Http\Controllers\categoriesController;
 use App\Http\Controllers\orderController;
 use App\Http\Controllers\collectionController;
+// use App\Http\Controllers\sliderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +19,8 @@ use App\Http\Controllers\collectionController;
 
 Route::get('/', function () {
     $categories = \App\models\categories::all();
-    return view('depan.home' , ['categories'=> $categories]);
+    $template = \App\models\template::all();
+    return view('depan.home' , ['categories'=> $categories, 'template' => $template]);
 });
 
 
@@ -37,6 +39,14 @@ Route::get('/contact', function () {
 Route::get('/admin', function () {
     return view('home');
 });
+
+// Route::get('/preview/template/{id}', function () {
+//     $template=\App\models\template::findorfail($id);
+//     return view('depan.preview' , ['template' => $template]);
+// });
+
+
+Route::get('/preview/template/{id}',[templateController::class, 'viewproduk']);
 
 Route::get('/template',[templateController::class, 'index']);
 Route::post('/template/create',[templateController::class, 'create']);
@@ -62,6 +72,11 @@ Route::get('collection/{id}/edit',[collectionController::class, 'edit']);
 Route::post('collection/{id}/update',[collectionController::class, 'update']);
 Route::get('/collection/{id}/delete',[collectionController::class, 'delete']);
 
+Route::get('/slider',[sliderController::class, 'index']);
+Route::post('/slider/create',[sliderController::class, 'create']);
+Route::get('slider/{id}/edit',[sliderController::class, 'edit']);
+Route::post('slider/{id}/update',[sliderController::class, 'update']);
+Route::get('/slider/{id}/delete',[sliderController::class, 'delete']);
 
 
 Auth::routes();

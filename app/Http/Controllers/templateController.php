@@ -20,7 +20,9 @@ class templateController extends Controller
 
     public function create(Request $request)
     {
-        \App\models\template::create($request->all());
+        $input = $request->all();
+        $input['image'] = request()->file('image')->store('template');
+        \App\models\template::create( $input);
         return redirect('/template')->with('sukses','Data Berhasil diBuat');
     }
 
@@ -32,8 +34,10 @@ class templateController extends Controller
 
     public function update(Request $request,$id)
     {
+        $input = $request->all();
+        $input['image'] = request()->file('image')->store('template');
         $template=\App\models\template::find($id);
-        $template->update($request->all());
+        $template->update($input);
         return redirect('/template')->with('sukses','Data Berhasil diUpdate');
     }
 
@@ -44,4 +48,10 @@ class templateController extends Controller
         return redirect('/template')->with('sukses','Data Berhasil diHapus');
     }
 
+
+    public function viewproduk($id)
+    {
+        $template=\App\models\template::find($id);
+        return view('depan/preview', ['template'=>$template]);
+    }
 }

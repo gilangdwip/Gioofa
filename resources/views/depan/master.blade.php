@@ -7,18 +7,18 @@
 
   <title>Explore Yourself !</title>
 
-  <link href="assets/img/" rel="icon">
-  <link href="assets/img/" rel="apple-touch-icon">
+  <link href="{{asset('asset/img')}}" rel="icon">
+  <link href="{{asset('asset/img')}}" rel="apple-touch-icon">
 
 
   <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{asset('asset/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
   {{-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> --}}
 
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
 
 </head>
 
@@ -86,13 +86,13 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{asset('asset/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('asset/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('asset/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('asset/vendor/swiper/swiper-bundle.min.js')}}"></script>
 
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('asset/js/main.js')}}"></script>
 
 </body>
 
