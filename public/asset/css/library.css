@@ -17,3 +17,7 @@ body {
 .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
     background-color: #000000;
 }
+
+.img-thumbnail {
+    width: 200px;
+}

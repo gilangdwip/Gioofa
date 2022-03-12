@@ -50,106 +50,11 @@
             </a>
           </div>
 
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Nike Shoe</h3>
-                <span>Blog</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img4.jpg">
-            </a>
-          </div>
-
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Kitchen Sink</h3>
-                <span>Blog</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img5.jpg">
-            </a>
-          </div>
-
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Amazon</h3>
-                <span>Company Profile</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img6.jpg">
-            </a>
-          </div>
-
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Boxed Water</h3>
-                <span>Company Profile</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img1.jpg">
-            </a>
-          </div>
-
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Build Indoo</h3>
-                <span>Portofolio</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img2.jpg">
-            </a>
-          </div>
-
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fan cybox">
-              <div class="work-info">
-                <h3>Cocooil</h3>
-                <span>Curriculum Vitae</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img3.jpg">
-            </a>
-          </div>
-
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Nike Shoe</h3>
-                <span>Blog</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img4.jpg">
-            </a>
-          </div>
-
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Kitchen Sink</h3>
-                <span>Blog</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img5.jpg">
-            </a>
-          </div>
-
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Amazon</h3>
-                <span>Company Profile</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img6.jpg">
-            </a>
-          </div>
-
-
-
         </div>
       </div>
 
     </section><!-- End  Works Section -->
 
   </main><!-- End #main -->
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 @endsection

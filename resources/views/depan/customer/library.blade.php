@@ -148,7 +148,7 @@
           <tr>
             <th scope="row">1</th>
             <td>{{$template->nama}}</td>
-            <td><img class="img-fluid" src="{{'storage/' . $template->image}}"></td>
+            <td><img src="{{'storage/' . $template->image}}" class="text-start rounded img-thumbnail " alt="..."></td>            
             <td><a class="btn btn-outline-dark" href="{{'storage/' . $template->file}}" download="{{$template->nama}}" role="button"><i class="fa-solid fa-download"></i></a></td>
           </tr>
           @endforeach

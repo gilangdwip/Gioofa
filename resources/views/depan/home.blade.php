@@ -67,6 +67,7 @@
 
       </div>
     </section> --}}
+    
     <section class="section">
       <div id="carouselExampleDark" class="carousel carousel-dark slide " data-aos="fade-up" data-aos-delay="100" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -114,20 +115,10 @@
             </div>
           </div>
         </div>
-
+        
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-            @foreach ($template as $template )
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4 position-relative">
-
-              <div class="d-flex gap-1  rating position-absolute">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-download px-1" viewBox="0 0 16 16">
-                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                  </svg>
-                  <p>10</p>
-              </div>
-
-
+          @foreach ($template as $template )
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="/preview/template/{{$template->id}}" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>{{$template->nama}}</h3>
@@ -135,59 +126,10 @@
               </div>
               <img class="img-fluid" src="{{'storage/' . $template->image}}">
             </a>
-
           </div>
+
           @endforeach
-
-
-          {{-- <div class="item Blog col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Template Name</h3>
-                <span>Portofolio</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img2.jpg">
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Template Name</h3>
-                <span>Curriculum Vitae</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img3.jpg">
-            </a>
-          </div>
-
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Template Name</h3>
-                <span>Blog</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img4.jpg">
-            </a>
-          </div>
-
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Template Name</h3>
-                <span>Blog</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img5.jpg">
-            </a>
-          </div>
-
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/preview" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Template Name</h3>
-                <span>Company Profile</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img6.jpg">
-            </a>
-          </div> --}}
+        
         </div>
 
 

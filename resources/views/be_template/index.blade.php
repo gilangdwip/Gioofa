@@ -14,7 +14,7 @@
                         <div class="panel-heading">
                             <div class="right">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Tambah Templae
+                                    Tambah Template
                                   </button>
                             </div>
                             <h3 class="panel-title">Template</h3>
@@ -29,8 +29,7 @@
                                             <th  scope="col">Nama</th>
                                             <th  scope="col">Deskripsi</th>
                                             <th  scope="col">Harga</th>
-                                            <th  scope="col">path file</th>
-
+                                            <th  scope="col">Path File</th>
                                             <th  scope="col">Image</th>
 
                                             <th>AKSI</th>
@@ -46,7 +45,7 @@
                                             <td> {{$template->deskripsi}}</td>
                                             <td> {{$template->harga}}</td>
                                             <td> {{'storage/' . $template->file}}</td>
-                                            <td> <img src="{{'storage/' . $template->image}}" alt="" style="width: 300px"></td>
+                                            <td> <img class="rounded img-thumbnail" src="{{'storage/' . $template->image}}" alt=""></td>
 
                                             <td>
                                                 <a href="/template/{{$template->id}}/edit" class = "btn btn-warning btn-sm">Edit</a>
