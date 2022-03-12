@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/register.css')}}">
+    <link rel="stylesheet" href="{{asset('asset/css/register.css')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>

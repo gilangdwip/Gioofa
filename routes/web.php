@@ -40,6 +40,11 @@ Route::get('/admin', function () {
     return view('home');
 });
 
+Route::get('/library', function () {
+    $template = \App\models\template::all();
+    return view('depan.customer.library', ['template' => $template]);
+});
+
 // Route::get('/preview/template/{id}', function () {
 //     $template=\App\models\template::findorfail($id);
 //     return view('depan.preview' , ['template' => $template]);

@@ -15,7 +15,7 @@
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label for="categories_id">Category ID</label>
-                                    <input name="categories_id" type="text" class="form-control" id="categories_id" aria-describedby="categories_id" value="{{$template->category_id}}">
+                                    <input name="categories_id" type="text" class="form-control" id="categories_id" aria-describedby="categories_id" value="{{$template->categories_id}}">
 
                                 </div>
                                 <div class="form-group">
@@ -35,6 +35,12 @@
                                 <br>
                                 <label for="image">Image</label>
                                 <input name="image" type="file" class="form-control" id="image" aria-describedby="image" >
+                                </div>
+                                <div class="form-group">
+                                <p>{{'http://127.0.0.1:8000/storage/' . $template->file}}</p>
+                                <br>
+                                <label for="file">file</label>
+                                <input name="file" type="file" class="form-control" id="file" aria-describedby="file" >
                                 </div>
 
 

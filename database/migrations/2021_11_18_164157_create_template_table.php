@@ -20,6 +20,7 @@ class CreateTemplateTable extends Migration
             $table->string('deskripsi');
             $table->string('harga');
             $table->string('image')->nullable();
+            $table->string('file')->nullable();
             $table->timestamps();
 
             $table->foreign('categories_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');

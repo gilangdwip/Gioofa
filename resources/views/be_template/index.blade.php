@@ -29,6 +29,8 @@
                                             <th  scope="col">Nama</th>
                                             <th  scope="col">Deskripsi</th>
                                             <th  scope="col">Harga</th>
+                                            <th  scope="col">path file</th>
+
                                             <th  scope="col">Image</th>
 
                                             <th>AKSI</th>
@@ -43,6 +45,7 @@
                                             <td> {{$template->nama}}</td>
                                             <td> {{$template->deskripsi}}</td>
                                             <td> {{$template->harga}}</td>
+                                            <td> {{'storage/' . $template->file}}</td>
                                             <td> <img src="{{'storage/' . $template->image}}" alt="" style="width: 300px"></td>
 
                                             <td>
@@ -94,6 +97,10 @@
                       <label for="image">Image</label>
                       <input name="image" type="file" class="form-control" id="image" aria-describedby="emailHelp">
                     </div>
+                    <div class="form-group">
+                        <label for="file">file</label>
+                        <input name="file" type="file" class="form-control" id="file" aria-describedby="emailHelp">
+                      </div>
 
 
                     <button type="submit" class="btn btn-primary">Kirim data</button>

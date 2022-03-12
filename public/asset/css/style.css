@@ -1,6 +1,4 @@
 
-
-
 body {
   font-family: "Inconsolata", monospace;
   color: #0d1e2d;
@@ -452,6 +450,31 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* MODAL */
+.modal .btn img {
+  width: 60px;
+  box-sizing: border-box;
+  margin-left: 80%;
+}
+
+.bca {
+  margin-left: 50px;
+}
+
+.gopay {
+  margin-left: 35px;
+}
+
+.dana {
+  margin-left: 45px;
+}
+
+
+
+.modal .btn .btn-outline:active {
+  background-color: rgb(0, 0, 0);
 }
 
 /*--------------------------------------------------------------

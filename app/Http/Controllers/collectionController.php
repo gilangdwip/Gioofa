@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class collectionController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $collection = \App\models\collection::all();

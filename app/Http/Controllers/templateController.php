@@ -22,6 +22,7 @@ class templateController extends Controller
     {
         $input = $request->all();
         $input['image'] = request()->file('image')->store('template');
+        $input['file'] = request()->file('file')->store('template');
         \App\models\template::create( $input);
         return redirect('/template')->with('sukses','Data Berhasil diBuat');
     }
@@ -36,6 +37,7 @@ class templateController extends Controller
     {
         $input = $request->all();
         $input['image'] = request()->file('image')->store('template');
+        $input['file'] = request()->file('file')->store('template');
         $template=\App\models\template::find($id);
         $template->update($input);
         return redirect('/template')->with('sukses','Data Berhasil diUpdate');
